@@ -138,6 +138,7 @@ def validate(args, config):
         short_term_name = args.profile
     else:
         short_term_name = '%s-%s' % (args.profile, args.short_term_suffix)
+    short_term_name = "default"
 
     if long_term_name == short_term_name:
         log_error_and_exit(logger,
